@@ -27,8 +27,7 @@ const Dashboard = () => {
 
   return (
     <>
-      { userName ? (<p>{userName}</p>) : <Intro /> }
-      
+      { userName ? (<p>{userName}</p>) : <Intro /> }  
     </>
   )
 }
