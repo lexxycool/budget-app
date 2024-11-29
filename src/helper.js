@@ -27,6 +27,11 @@ const generateRandomColor = () => {
     return `${existingBudgetsLength * 34} 65% 50%`
 }
 
+//timer
+export const timer = () => new Promise(res => {
+    setTimeout(res, Math.random() * 2000)
+})
+
 //delete item
 export const deleteItem = ({ key }) => {
     return localStorage.removeItem(key);

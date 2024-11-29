@@ -1,5 +1,5 @@
 import React from 'react'
-import { createBudget, fetchData } from '../helper'
+import { createBudget, fetchData, timer } from '../helper'
 import { createBrowserRouter, useLoaderData } from 'react-router-dom';
 import Intro from '../components/Intro';
 import { toast } from 'react-toastify';
@@ -14,6 +14,7 @@ export function dashboardLoader() {
 
 //action
 export async function dashboardAction({request}) {
+  await timer();  
   const data = await request.formData();
   const { _action, ...values } = Object.fromEntries(data);
 
