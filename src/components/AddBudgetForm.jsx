@@ -66,8 +66,7 @@ function AddBudgetForm() {
                         <>
                             <span>Create budget</span>
                             <CurrencyDollarIcon width={20}/>
-                        </>
-                       
+                        </>   
                     )
                 }
             </button>
