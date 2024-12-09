@@ -600,3 +600,30 @@ table a {
 .Toastify__toast-body {
   font-size: var(--fs-300);
 }
+
+/* quotes */
+.username {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quotes {
+  margin-left: auto;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: italic;
+  flex-shrink: 1;
+  max-width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .username, .quotes {
+    font-size: 20px; 
+    flex-wrap: wrap;
+  }
+}

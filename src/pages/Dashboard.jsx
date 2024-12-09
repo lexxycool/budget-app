@@ -5,6 +5,7 @@ import Intro from '../components/Intro';
 import { toast } from 'react-toastify';
 import AddBudgetForm from '../components/AddBudgetForm';
 import AddExpenseForm from '../components/AddExpenseForm';
+import Quotes from '../components/Quotes';
 
 //loader
 export function dashboardLoader() {
@@ -62,9 +63,10 @@ const Dashboard = () => {
     <>
       { userName ? (
         <div className='dashboard'>
-          <h1> 
+          <h1 className='username'> 
             Welcome, <span className='accent'>{userName}</span>
-          </h1>
+            <Quotes />
+          </h1>      
           <div className='grid-sm'>
             { budgets && budgets.length > 0 ?
               (
