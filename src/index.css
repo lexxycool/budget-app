@@ -325,7 +325,7 @@ nav a {
 
 @media screen and (max-width: 525px) {
   nav a span {
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -611,19 +611,26 @@ table a {
 
 .quotes {
   margin-left: auto;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 400;
   font-style: italic;
   flex-shrink: 1;
-  max-width: 50%;
-  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: wrap;
 }
 
 @media (max-width: 1100px) {
   .username, .quotes {
     font-size: 20px; 
     flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+  }
+  .quotes {
+   margin-top: 20px;
+   font-size: 18px;
+   
   }
 }
