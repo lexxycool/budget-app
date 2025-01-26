@@ -46,7 +46,7 @@ const generateRandomColor = () => {
 
 //timer
 export const timer = () => new Promise(res => {
-    setTimeout(res, Math.random() * 2000)
+    setTimeout(res, Math.random() * 800)
 })
 
 //delete item
@@ -75,6 +75,11 @@ export const formatPercentage = (amt) => {
         style: "percent",
         minimumFractionDigits: 0
    }) 
+}
+
+//format date
+export const formatDateToLocaleString = (epoch) => {
+    return new Date(epoch).toLocaleDateString();
 }
 
 //format currency
